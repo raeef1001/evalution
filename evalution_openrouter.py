@@ -114,27 +114,23 @@ Evaluate the AI-generated solution based on the following categories:
 
 Provide your evaluation as a JSON object. The JSON object MUST have a key "problem_id" with the EXACT Problem ID provided below, and then keys for each of the seven categories listed above with their respective scores.
 
-EXACT Problem ID: {problem_id_expected}
+EXACT Problem ID: 
 
-Physics Problem:
-{problem_text}
+
 
 Manual Solution (Ground Truth):
-{manual_ground_truth}
+
 
 Manual Solution (Elaborated Solution Steps):
-{manual_elaborated_steps}
 
-Manual Solution (Final Answers in Brief):
-{manual_final_answers}
 
 AI-Generated Solution:
-{ai_generated_content}
+
 
 Now, provide your evaluation ONLY as a single JSON object matching the specified format. Do not include any other text, explanations, or markdown formatting outside of the JSON object itself.
 Your entire response MUST be a valid JSON. Example structure:
 {{
-  "problem_id": "{problem_id_expected}",
+  
   "mathematical_accuracy": <score_1_5>,
   "logical_consistency": <score_1_5>,
   "completeness": <score_1_5>,
